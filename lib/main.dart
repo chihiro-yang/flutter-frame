@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'page/inlet/my_app.dart';
+import 'package:frame_master/page/index/my_app.dart';
 
 void main() => runApp(MyApp());

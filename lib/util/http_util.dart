@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
 import 'package:frame_master/serve/net/base_code.dart';
 import 'package:frame_master/serve/net/base_dio.dart';
 import '../serve/net/dio/dio_error.dart';
@@ -35,15 +36,22 @@ class HttpUtil {
   /// @params path 请求路径
   /// @params params 请求参数
   /// @params options dio基本信息配置
-  Future getRequest(String path, {Map params, Options options}) async {
+  Future<void> getRequest(
+    String path, {
+    @required Function onSuccess,
+    @required Function onError,
+    Map params,
+    Options options,
+  }) async {
     try {
       Response response = await _dio.get(path,
           options: options,
           queryParameters: params,
           onReceiveProgress: DioProgress.dioSendProgress);
-      return _baseCode.requestResult(response);
+      _baseCode.requestResult(response, onSuccess, onError);
     } on DioError catch (e) {
       DioErrors.formatError(e);
+      onError();
     }
   }
 
@@ -52,8 +60,14 @@ class HttpUtil {
   /// @params params 请求参数
   /// @params data 文本提交
   /// @params options dio基本信息配置
-  Future postRequest(String path,
-      {Map params, Map formatData, Options options}) async {
+  Future postRequest(
+    String path, {
+    @required Function onSuccess,
+    @required Function onError,
+    Map params,
+    Map formatData,
+    Options options,
+  }) async {
     try {
       Response response = await _dio.post(
         path,
@@ -62,10 +76,10 @@ class HttpUtil {
         onReceiveProgress: DioProgress.dioReceiveProgress,
         onSendProgress: DioProgress.dioSendProgress,
       );
-      _baseCode.requestResult(response);
+      _baseCode.requestResult(response, onSuccess, onError);
     } on DioError catch (e) {
       DioErrors.formatError(e);
-      return null;
+      onError();
     }
   }
 
@@ -74,18 +88,25 @@ class HttpUtil {
   /// @params save 存储路径
   /// @params
   /// @params
-  Future downloadRequest(String path, String savePath,
-      {Map params, Map formatData, Options options}) async {
+  Future downloadRequest(
+    String path,
+    String savePath, {
+    @required Function onSuccess,
+    @required Function onError,
+    Map params,
+    Map formatData,
+    Options options,
+  }) async {
     try {
       Response response = await _dio.download(path, savePath,
           queryParameters: params,
-          options: options,
           data: formatData,
+          options: options,
           onReceiveProgress: DioProgress.dioReceiveProgress);
-      return _baseCode.requestResult(response);
+      return _baseCode.requestResult(response, onSuccess, onError);
     } on DioError catch (e) {
       DioErrors.formatError(e);
-      return null;
+      onError();
     }
   }
 }

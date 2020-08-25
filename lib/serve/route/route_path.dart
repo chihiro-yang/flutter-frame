@@ -1,4 +1,4 @@
-import 'package:frame_master/page/inlet/navigate_page.dart';
+import 'package:frame_master/page/index/navigate_page.dart';
 
 /// @time 2020/7/20 5:18 PM
 /// @version 1.00

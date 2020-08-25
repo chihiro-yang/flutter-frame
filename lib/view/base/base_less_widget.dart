@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 /// @author 高扬
 
 abstract class BaseLessWidget extends StatelessWidget {
-
   static BuildContext buildContext;
 
   @override
@@ -15,12 +14,12 @@ abstract class BaseLessWidget extends StatelessWidget {
     return buildView(context);
   }
 
+  //获取上下文
+  void getContext() => buildContext;
+
   //初始化View
   Widget buildView(BuildContext context);
 
   //初始化数据
   void initData();
-
-  //获取上下文
-  void getContext() => buildContext;
 }

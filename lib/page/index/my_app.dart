@@ -5,6 +5,7 @@ import 'package:frame_master/serve/route/route_path.dart';
 import 'package:frame_master/util/screen_util.dart';
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     initApp(context);
