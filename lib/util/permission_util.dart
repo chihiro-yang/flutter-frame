@@ -1,21 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-//TODO 需继续考虑逻辑性
 class PermissionUtil {
-
-  ///动态单一权校验
-  static Future<void> checkCameraPermission(Permission permission,
-      {@required VoidCallback onSuccessCallBack,
-      @required VoidCallback onRefuseCallBack}) async {
-    var status = await permission.status;
-    if (status.isGranted) {
-      onSuccessCallBack();
-    } else {
-      onRefuseCallBack();
-    }
-  }
-
   ///动态单一权限请求(包含权限校验)
   static Future<void> requestPermission(Permission permission,
       {@required VoidCallback onSuccessCallBack,

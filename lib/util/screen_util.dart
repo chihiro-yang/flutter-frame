@@ -3,9 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ///初始化屏幕适配
 initScreen(BuildContext buildContext,
-        {double designWidth = 1080, double designHeight = 1920}) =>
-    ScreenUtil.init(buildContext,
-        width: designWidth, height: designHeight, allowFontScaling: false);
+    {double designWidth = 1080, double designHeight = 1920}) {
+  ScreenUtil.init(buildContext,
+      width: designWidth, height: designHeight, allowFontScaling: false);
+}
 
 ///屏幕宽度
 getScreenWidth() => 1.wp;
@@ -37,7 +38,7 @@ setMargin(
     EdgeInsets.only(left: left.w, right: right.w, top: top.h, bottom: bottom.h);
 
 ///设置全部外边距
-setMarginAll({double all = 0.0}) =>
+seAllMargin({double all = 0.0}) =>
     EdgeInsets.only(left: all.w, right: all.w, top: all.h, bottom: all.h);
 
 ///设置内边距
@@ -49,5 +50,5 @@ setPadding(
     EdgeInsets.only(left: left.w, right: right.w, top: top.h, bottom: bottom.h);
 
 ///设置全部内边距
-setPaddingAll({double all = 0.0}) =>
+setAllPadding({double all = 0.0}) =>
     EdgeInsets.only(left: all.w, right: all.w, top: all.h, bottom: all.h);

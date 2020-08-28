@@ -9,30 +9,24 @@ class BaseCode {
   //处理请求结果
   dynamic requestResult(
     Response response,
-    Function onSuccess,
-    Function onError,
   ) async {
     BaseResponse baseResponse = BaseResponse.fromJson(response.data);
     if (response.statusCode == 200) {
       switch (baseResponse.code) {
         case 200:
-          onSuccess(response.data);
-          break;
+          return response.data;
         case 201:
           // 参数错误
-          onError();
-          break;
+          return null;
         case 401:
           // Token过期
-          onError();
-          break;
+          return null;
         default:
           // 其它值
-          onError();
-          break;
+          return null;
       }
     } else {
-      onError();
+      return null;
     }
   }
 }

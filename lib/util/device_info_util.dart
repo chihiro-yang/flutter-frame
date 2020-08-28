@@ -2,11 +2,8 @@ import 'dart:io';
 
 import 'package:device_info/device_info.dart';
 
+///获取设备信息
 class DeviceInfoUtil {
-  //调用方式
-  // DeviceInfoUtil.getDeviceInfo().then((value) {});
-
-  ///获取设备信息
   static Future getDeviceInfo() async {
     try {
       if (Platform.isAndroid) {
@@ -17,7 +14,8 @@ class DeviceInfoUtil {
         return iosInfo;
       }
     } catch (e) {
-      print("-------------设备信息获取失败-------------错误信息>>>>>>>>>>>>${e.toString()}");
+      print(
+          "-------------设备信息获取失败-------------错误信息>>>>>>>>>>>>${e.toString()}");
       throw (e);
     }
   }

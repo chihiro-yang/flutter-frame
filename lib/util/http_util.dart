@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:frame_master/serve/net/base_code.dart';
 import 'package:frame_master/serve/net/base_dio.dart';
 import '../serve/net/dio/dio_error.dart';
@@ -38,8 +37,6 @@ class HttpUtil {
   /// @params options dio基本信息配置
   Future<void> getRequest(
     String path, {
-    @required Function onSuccess,
-    @required Function onError,
     Map params,
     Options options,
   }) async {
@@ -48,10 +45,10 @@ class HttpUtil {
           options: options,
           queryParameters: params,
           onReceiveProgress: DioProgress.dioSendProgress);
-      _baseCode.requestResult(response, onSuccess, onError);
+      return _baseCode.requestResult(response);
     } on DioError catch (e) {
       DioErrors.formatError(e);
-      onError();
+      return null;
     }
   }
 
@@ -62,8 +59,6 @@ class HttpUtil {
   /// @params options dio基本信息配置
   Future postRequest(
     String path, {
-    @required Function onSuccess,
-    @required Function onError,
     Map params,
     Map formatData,
     Options options,
@@ -76,10 +71,10 @@ class HttpUtil {
         onReceiveProgress: DioProgress.dioReceiveProgress,
         onSendProgress: DioProgress.dioSendProgress,
       );
-      _baseCode.requestResult(response, onSuccess, onError);
+      return _baseCode.requestResult(response);
     } on DioError catch (e) {
       DioErrors.formatError(e);
-      onError();
+      return null;
     }
   }
 
@@ -91,8 +86,6 @@ class HttpUtil {
   Future downloadRequest(
     String path,
     String savePath, {
-    @required Function onSuccess,
-    @required Function onError,
     Map params,
     Map formatData,
     Options options,
@@ -103,10 +96,10 @@ class HttpUtil {
           data: formatData,
           options: options,
           onReceiveProgress: DioProgress.dioReceiveProgress);
-      return _baseCode.requestResult(response, onSuccess, onError);
+      return _baseCode.requestResult(response);
     } on DioError catch (e) {
       DioErrors.formatError(e);
-      onError();
+      return null;
     }
   }
 }

@@ -2,12 +2,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 ///本地化存储
 class SpUtil {
-  //存储/获取方法
-  //SpUtil.saveData("key", "value");
-  //SpUtil.getData<int>("key").then((value) {});
 
   ///存储数据
-  static saveData<T>(String key, T value) async {
+  static putData<T>(String key, T value) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
     switch (T) {

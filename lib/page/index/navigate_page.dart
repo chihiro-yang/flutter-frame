@@ -7,14 +7,10 @@ class NavigatePage extends StatefulWidget {
   _NavigatePageState createState() => _NavigatePageState();
 }
 
- class _NavigatePageState extends State<NavigatePage> {
+class _NavigatePageState extends State<NavigatePage> {
   @override
   void initState() {
     super.initState();
-    String data = "1.22";
-setState(() {
-
-});
   }
 
   @override
@@ -31,5 +27,3 @@ setState(() {
     );
   }
 }
-
-

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/util/screen_util.dart';
-import 'package:frame_master/util/sp_util.dart';
 
 class StartPage extends StatefulWidget {
   @override
