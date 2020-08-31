@@ -15,6 +15,7 @@ class _NavigatePageState extends State<NavigatePage> {
 
   @override
   Widget build(BuildContext context) {
+    print("哈哈哈");
     return Scaffold(
       body: Center(
         child: GestureDetector(
