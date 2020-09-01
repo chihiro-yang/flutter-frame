@@ -3,26 +3,34 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
 import 'package:frame_master/page/index/start_page.dart';
+import 'package:frame_master/serve/config/gei_it_config.dart';
 import 'package:frame_master/serve/route/route_path.dart';
+import 'package:frame_master/util/get_it_util.dart';
+import 'package:frame_master/view/base/base_state.dart';
 import 'package:provider/provider.dart';
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends BaseState<MyApp> {
+  @override
+  initStates() {
+    GetItConfig().configGetIt();
+  }
 
   @override
-  Widget build(BuildContext context) {
-    return initProvider();
-  }
+  initBuild() => _initProvider();
 
-  initProvider() {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => StartProvider()),
-      ],
-      child: initBuild(),
-    );
-  }
+  _initProvider() => MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create: (_) => getIt<StartProvider>())
+        ],
+        child: _initMaterial(),
+      );
 
-  initBuild() => MaterialApp(
+  _initMaterial() => MaterialApp(
         initialRoute: "/",
         routes: RoutePath.appRoute,
         title: 'Flutter Frame',

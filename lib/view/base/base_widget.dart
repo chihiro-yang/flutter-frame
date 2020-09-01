@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class BaseWidget {
   ///基础Scaffold
-  static Scaffold baseScaffold({AppBar appBar, Color bgColor, Widget child}) {
+  static Scaffold scaffold({AppBar appBar, Color bgColor, Widget child}) {
     return Scaffold(appBar: appBar, backgroundColor: bgColor, body: child);
   }
 }

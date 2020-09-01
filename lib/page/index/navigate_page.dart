@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/util/toast_util.dart';
+import 'package:frame_master/view/base/base_state.dart';
 
 /// 导航
 class NavigatePage extends StatefulWidget {
@@ -7,24 +8,17 @@ class NavigatePage extends StatefulWidget {
   _NavigatePageState createState() => _NavigatePageState();
 }
 
-class _NavigatePageState extends State<NavigatePage> {
+class _NavigatePageState extends BaseState<NavigatePage> {
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    print("哈哈哈");
-    return Scaffold(
-      body: Center(
-        child: GestureDetector(
-          onTap: () {
-            ToastUtil.showToast(" ");
-          },
-          child: Text("首页"),
+  initBuild() => Scaffold(
+        appBar: AppBar(),
+        body: Center(
+          child: GestureDetector(
+            onTap: () {
+              ToastUtil.showToast(" ");
+            },
+            child: Text("首页"),
+          ),
         ),
-      ),
-    );
-  }
+      );
 }

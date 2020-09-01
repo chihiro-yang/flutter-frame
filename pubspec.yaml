@@ -65,6 +65,8 @@ dependencies:
   stacked: ^1.7.0
   #状态管理
   provider: ^4.3.1
+  #获取对象
+  get_it: ^4.0.4
 
   #------animal------
   #跳转过渡动画

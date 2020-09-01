@@ -9,6 +9,7 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
   void initState() {
     super.initState();
     initStates();
+    registerEvent();
   }
 
   @override
@@ -28,7 +29,7 @@ abstract class BaseState<T extends StatefulWidget> extends State<T> {
   buildInit() {}
 
   //初始化监听
-  initListener() {}
+  bindListener(Key key) {}
 
   //注册信息
   registerEvent() {}
