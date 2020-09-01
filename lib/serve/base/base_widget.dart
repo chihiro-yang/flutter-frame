@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// @time 2020/8/28 6:59 PM
 /// @author gyy
-/// @describe: Base类
+/// @describe: 基础 Widget 类
 
 class BaseWidget {
   ///基础Scaffold

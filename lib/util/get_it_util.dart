@@ -5,3 +5,4 @@ import 'package:get_it/get_it.dart';
 /// @describe:
 
 GetIt getIt = GetIt.instance;
+

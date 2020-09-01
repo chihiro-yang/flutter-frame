@@ -35,7 +35,7 @@ class HttpUtil {
   /// @params path 请求路径
   /// @params params 请求参数
   /// @params options dio基本信息配置
-  Future<void> getRequest(
+  Future<Response> getRequest(
     String path, {
     Map params,
     Options options,

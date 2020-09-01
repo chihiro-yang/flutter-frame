@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 class ImageWidget {
   ///图片加载控件
   Widget cachedNetworkImage(
-    String imageUrl, {
-    double width = 0.0,
-    double height = 0.0,
-    BoxFit fit = BoxFit.contain,
-    Widget placeholder,
-    Widget errorWidget,
-  }) {
+      String imageUrl, {
+        double width = 0.0,
+        double height = 0.0,
+        BoxFit fit = BoxFit.contain,
+        Widget placeholder,
+        Widget errorWidget,
+      }) {
     placeholder ?? CircularProgressIndicator();
     errorWidget ?? Icon(Icons.error);
     return CachedNetworkImage(

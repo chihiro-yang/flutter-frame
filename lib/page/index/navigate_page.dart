@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:frame_master/serve/base/base_state.dart';
 import 'package:frame_master/util/toast_util.dart';
-import 'package:frame_master/view/base/base_state.dart';
 
 /// 导航
 class NavigatePage extends StatefulWidget {

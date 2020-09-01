@@ -14,7 +14,7 @@ class BaseCode {
     if (response.statusCode == 200) {
       switch (baseResponse.code) {
         case 200:
-          return response.data;
+          return response;
         case 201:
           // 参数错误
           return null;
