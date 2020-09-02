@@ -76,7 +76,7 @@ dependencies:
   #加载框
   flutter_spinkit: ^4.1.2+1
   #弹框提示
-  bot_toast: ^3.0.0
+  bot_toast: ^3.0.4
   #轮播
   flutter_swiper: ^1.1.6
   #图片加载
@@ -104,8 +104,6 @@ dependencies:
   event_bus: ^1.1.1
   #代码检查
   pedantic: ^1.9.0
-  #国际化
-  #easy_localization: ^2.3.3
   #flutter_cache_manager: ^1.4.1
 
 dev_dependencies:

@@ -1,7 +1,10 @@
 import 'package:dio/dio.dart';
 
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: dio 错误处理
+
 class DioErrors {
-  ///错误请求处理
   static void formatError(DioError e) {
     if (e.type == DioErrorType.CONNECT_TIMEOUT) {
       print("---------------------连接超时---------------------" + e.message);

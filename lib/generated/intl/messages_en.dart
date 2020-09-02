@@ -22,6 +22,6 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "appName4" : MessageLookupByLibrary.simpleMessage("flutter-frame2"),
-    "local1" : MessageLookupByLibrary.simpleMessage("asdad")
+    "local2" : MessageLookupByLibrary.simpleMessage("asdad")
   };
 }

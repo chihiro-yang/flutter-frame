@@ -1,3 +1,7 @@
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: base response
+
 class BaseResponse {
   int code;
   String message;

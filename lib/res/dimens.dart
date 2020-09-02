@@ -1,3 +1,7 @@
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 字号
+
 class Dimens {
   static const double font_sp10 = 10;
   static const double font_sp12 = 12;

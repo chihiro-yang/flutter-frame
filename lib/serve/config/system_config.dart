@@ -4,6 +4,6 @@ import 'package:flutter/material.dart';
 /// @author gyy
 /// @describe: 全局Context
 
-class ContextConfig {
+class SystemConfig {
   static GlobalKey<NavigatorState> navigatorKey = new GlobalKey();
 }

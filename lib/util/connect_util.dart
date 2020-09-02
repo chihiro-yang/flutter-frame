@@ -3,9 +3,11 @@ import 'dart:async';
 import 'package:connectivity/connectivity.dart';
 import 'package:dio/dio.dart';
 
-/// 获取网络状态
-class ConnectivityUtil {
+/// @time 2020/9/1 5:20 PM
+/// @author gyy
+/// @describe: 获取网络状态
 
+class ConnectivityUtil {
   //获得 网络连接状态
   static void getNetWorkState(
       {VoidCallback mobileCallBack,

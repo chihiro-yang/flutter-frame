@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 颜色
+
 class Colors {
   static const Color app_main = Color(0xFF666666);
 

@@ -3,9 +3,9 @@ import 'package:frame_master/serve/net/base_url.dart';
 import 'package:frame_master/serve/net/dio/dio_cookie.dart';
 import 'package:frame_master/serve/net/dio/dio_interceptors.dart';
 
-/// @time 2020/8/21 10:05 AM
-/// @version 1.00
-/// @author 高扬
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: base dio
 
 class BaseDio {
   Dio _dio;

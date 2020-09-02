@@ -1,8 +1,12 @@
 import 'package:dio/dio.dart';
 import 'package:frame_master/serve/net/base_code.dart';
 import 'package:frame_master/serve/net/base_dio.dart';
-import '../serve/net/dio/dio_error.dart';
-import '../serve/net/dio/dio_process.dart';
+import 'package:frame_master/serve/net/dio/dio_error.dart';
+import 'package:frame_master/serve/net/dio/dio_process.dart';
+
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 网络请求
 
 class HttpUtil {
   Dio _dio;

@@ -1,3 +1,7 @@
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 数据库 配置
+
 class DbHelper {
   //数据库名称
   static const db_name = "db_name";

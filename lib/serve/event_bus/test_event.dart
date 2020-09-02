@@ -1,6 +1,9 @@
 import 'package:event_bus/event_bus.dart';
 
-///详细用法 参照官网
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: eventBus 通信
+
 EventBus eventBus = EventBus();
 
 class TextEvent {

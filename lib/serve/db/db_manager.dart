@@ -1,6 +1,10 @@
 import 'package:frame_master/serve/db/db_helper.dart';
 import 'package:sqflite/sqflite.dart';
 
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 数据库 管理
+
 class DbManager {
   Future<Database> _db;
 

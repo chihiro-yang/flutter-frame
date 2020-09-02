@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/view/dialog/loading_view.dart';
 
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 加载框
+
 class LoadingDialog {
   ///显示加载动画
   static void show(BuildContext context,

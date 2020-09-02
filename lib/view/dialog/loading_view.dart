@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/util/screen_util.dart';
 
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 加载view
 class LoadingView extends StatelessWidget {
   final double bottomMargin;
   final double bottomPadding;
@@ -13,7 +16,8 @@ class LoadingView extends StatelessWidget {
       width: getScreenWidth(),
       height: getScreenHeight(),
       margin: setMargin(bottom: bottomMargin),
-      child: Scaffold(backgroundColor: Colors.transparent, body: _childLoadingAnimated()),
+      child: Scaffold(
+          backgroundColor: Colors.transparent, body: _childLoadingAnimated()),
     );
   }
 

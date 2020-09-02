@@ -2,6 +2,10 @@ import 'dart:io';
 
 import 'package:path_provider/path_provider.dart';
 
+/// @time 2020/9/1 6:08 PM
+/// @author gyy
+/// @describe: 路径信息
+
 class PathUtil {
   ///获取缓存catch目录路径
   static Future getCatchDirPath() async {

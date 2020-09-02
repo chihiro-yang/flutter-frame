@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:permission_handler/permission_handler.dart';
 
+/// @time 2020/9/1 6:08 PM
+/// @author gyy
+/// @describe: 网络权限
+
 class PermissionUtil {
   ///动态单一权限请求(包含权限校验)
   static Future<void> requestPermission(Permission permission,

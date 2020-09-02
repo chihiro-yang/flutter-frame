@@ -2,7 +2,10 @@ import 'dart:io';
 
 import 'package:device_info/device_info.dart';
 
-///获取设备信息
+/// @time 2020/9/1 5:20 PM
+/// @author gyy
+/// @describe: 获取设备信息
+
 class DeviceInfoUtil {
   static Future getDeviceInfo() async {
     try {

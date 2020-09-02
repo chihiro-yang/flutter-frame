@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-/// @time 2020/7/20 5:18 PM
-/// @version 1.00
-/// @author 高扬
-/// @参考 https://juejin.im/post/5c3ed794f265da616b10f14e
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 动态路由
+
 
 class RouteUtil {
   ///动态路由 - 跳转

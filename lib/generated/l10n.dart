@@ -44,10 +44,10 @@ class S {
   }
 
   /// `asdad`
-  String get local1 {
+  String get local2 {
     return Intl.message(
       'asdad',
-      name: 'local1',
+      name: 'local2',
       desc: '',
       args: [],
     );

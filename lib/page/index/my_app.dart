@@ -12,6 +12,10 @@ import 'package:frame_master/serve/route/route_path.dart';
 import 'package:frame_master/util/get_it_util.dart';
 import 'package:provider/provider.dart';
 
+/// @time 2020/8/28 12:06 PM
+/// @author gyy
+/// @describe: MyApp
+
 class MyApp extends StatefulWidget {
   @override
   _MyApplicationState createState() => _MyApplicationState();
@@ -35,7 +39,7 @@ class _MyApplicationState extends BaseState<MyApp> {
       );
 
   _initMaterial() => MaterialApp(
-        navigatorKey: ContextConfig.navigatorKey,
+        navigatorKey: SystemConfig.navigatorKey,
         initialRoute: "/",
         routes: RoutePath.appRoute,
         title: 'Flutter Frame',

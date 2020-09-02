@@ -1,8 +1,8 @@
 import 'package:frame_master/page/index/navigate_page.dart';
 
-/// @time 2020/7/20 5:18 PM
-/// @version 1.00
-/// @author 高扬
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: 静态路由
 
 class RoutePath {
   static var appRoute = {

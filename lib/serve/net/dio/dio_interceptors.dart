@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
 
-///dio 拦截器 - 打印相关数据
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: dio 拦截器
 
 class DioInterceptors {
   static InterceptorsWrapper dioInterceptors() {

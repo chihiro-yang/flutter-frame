@@ -1,8 +1,9 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-///本地化存储
+/// @time 2020/8/28 3:43 PM
+/// @author gyy
+/// @describe: share本地存储
 class SpUtil {
-
   ///存储数据
   static putData<T>(String key, T value) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();

@@ -1,6 +1,9 @@
+import 'package:frame_master/serve/db/db_manager.dart';
 import 'package:sqflite/sqlite_api.dart';
 
-import '../serve/db/db_manager.dart';
+/// @time 2020/9/1 5:20 PM
+/// @author gyy
+/// @describe: 操作数据库
 
 class DbUtil {
   static Database _database;
@@ -40,7 +43,8 @@ class DbUtil {
     try {
       _database.transaction((txn) async {
         await txn.insert(tableName, values,
-            nullColumnHack: nullColumnHack, conflictAlgorithm: conflictAlgorithm);
+            nullColumnHack: nullColumnHack,
+            conflictAlgorithm: conflictAlgorithm);
       });
     } catch (e) {
       print("数据插入失败-------------------------------->>>" + e);
@@ -48,7 +52,8 @@ class DbUtil {
   }
 
   //删除
-  static void deleteDate(String daName, {String where, List<Object> whereArgs}) async {
+  static void deleteDate(String daName,
+      {String where, List<Object> whereArgs}) async {
     try {
       await _database.transaction((txn) async {
         await txn.delete(daName, where: where, whereArgs: whereArgs);
@@ -60,11 +65,15 @@ class DbUtil {
 
   //更改
   static void updateDate(String tableName, Map<String, Object> values,
-      {String where, List<Object> whereArgs, ConflictAlgorithm conflictAlgorithm}) async {
+      {String where,
+      List<Object> whereArgs,
+      ConflictAlgorithm conflictAlgorithm}) async {
     try {
       await _database.transaction((txn) async {
         await txn.update(tableName, values,
-            where: where, whereArgs: whereArgs, conflictAlgorithm: conflictAlgorithm);
+            where: where,
+            whereArgs: whereArgs,
+            conflictAlgorithm: conflictAlgorithm);
       });
     } catch (e) {
       print("数据更新失败-------------------------------->>>" + e);

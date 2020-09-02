@@ -1,10 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:frame_master/serve/net/base_response.dart';
 
-/// @time 2020/8/21 10:56 AM
-/// @version 1.00
-/// @author 高扬
-
+/// @time 2020/9/1 9:21 AM
+/// @author gyy
+/// @describe: base code
 class BaseCode {
   //处理请求结果
   dynamic requestResult(

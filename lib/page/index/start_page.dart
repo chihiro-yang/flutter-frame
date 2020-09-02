@@ -6,6 +6,10 @@ import 'package:frame_master/util/get_it_util.dart';
 import 'package:frame_master/util/screen_util.dart';
 import 'package:frame_master/util/system_util.dart';
 
+/// @time 2020/8/28 12:06 PM
+/// @author gyy
+/// @describe: StartPage
+
 class StartPage extends StatefulWidget {
   @override
   _StartState createState() => _StartState();
