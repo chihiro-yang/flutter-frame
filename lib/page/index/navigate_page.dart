@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/serve/base/base_state.dart';
+import 'package:frame_master/serve/base/base_ful_widget.dart';
 import 'package:frame_master/util/toast_util.dart';
 
 /// @time 2020/8/28 12:06 PM
 /// @author gyy
 /// @describe: NavigatePage
 
-class NavigatePage extends StatefulWidget {
+class NavigatePage extends BaseFulWidget {
   @override
-  _NavigatePageState createState() => _NavigatePageState();
+  BaseFulState<StatefulWidget> getBaseFulState() => _NavigatePageState();
 }
 
-class _NavigatePageState extends BaseState<NavigatePage> {
+class _NavigatePageState extends BaseFulState<NavigatePage> {
   @override
   initBuild() => Scaffold(
         appBar: AppBar(),

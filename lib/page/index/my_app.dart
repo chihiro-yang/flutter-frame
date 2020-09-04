@@ -5,7 +5,7 @@ import 'package:frame_master/generated/l10n.dart';
 import 'package:frame_master/page/home/provider/home_provider.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
 import 'package:frame_master/page/index/start_page.dart';
-import 'package:frame_master/serve/base/base_state.dart';
+import 'package:frame_master/serve/base/base_ful_widget.dart';
 import 'package:frame_master/serve/config/system_config.dart';
 import 'package:frame_master/serve/config/gei_it_config.dart';
 import 'package:frame_master/serve/route/route_path.dart';
@@ -16,12 +16,13 @@ import 'package:provider/provider.dart';
 /// @author gyy
 /// @describe: MyApp
 
-class MyApp extends StatefulWidget {
+class MyApp extends BaseFulWidget {
   @override
-  _MyApplicationState createState() => _MyApplicationState();
+  BaseFulState<StatefulWidget> getBaseFulState() => _MyAppState();
 }
 
-class _MyApplicationState extends BaseState<MyApp> {
+class _MyAppState extends BaseFulState<MyApp> {
+
   @override
   initStates() {
     GetItConfig().registerGetIt();

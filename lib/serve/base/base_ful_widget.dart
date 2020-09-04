@@ -2,9 +2,19 @@ import 'package:flutter/material.dart';
 
 /// @time 2020/8/31 10:23 AM
 /// @author gyy
-/// @describe: 基础 State 类
+/// @describe: StatefulWidget 基础类
 
-abstract class BaseState<T extends StatefulWidget> extends State<T> {
+abstract class BaseFulWidget extends StatefulWidget {
+  static BaseFulState baseWidgetState;
+
+  BaseFulState getBaseFulState();
+
+  @override
+  BaseFulState createState() => baseWidgetState = getBaseFulState();
+}
+
+abstract class BaseFulState<T extends StatefulWidget> extends State<T>
+    with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();

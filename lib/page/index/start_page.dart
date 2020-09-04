@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
-import 'package:frame_master/serve/base/base_state.dart';
+import 'package:frame_master/serve/base/base_ful_widget.dart';
 import 'package:frame_master/serve/base/base_widget.dart';
 import 'package:frame_master/util/get_it_util.dart';
 import 'package:frame_master/util/screen_util.dart';
@@ -10,12 +10,12 @@ import 'package:frame_master/util/system_util.dart';
 /// @author gyy
 /// @describe: StartPage
 
-class StartPage extends StatefulWidget {
+class StartPage extends BaseFulWidget {
   @override
-  _StartState createState() => _StartState();
+  BaseFulState<StatefulWidget> getBaseFulState() => _StartState();
 }
 
-class _StartState extends BaseState<StartPage> {
+class _StartState extends BaseFulState<StartPage> with WidgetsBindingObserver {
   StartProvider _startProvider = getIt.get<StartProvider>();
 
   GestureDetector ges1, ges2;
@@ -49,5 +49,10 @@ class _StartState extends BaseState<StartPage> {
   @override
   bindListener(Key key) {
     if (ges1.key == key) {}
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
   }
 }

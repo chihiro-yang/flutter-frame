@@ -1,2 +1,16 @@
 国际化 参考 - https://www.jianshu.com/p/bee6db203e21
 路由   参考 - https://juejin.im/post/5c3ed794f265da616b10f14e
+
+1- StatefulWidget 与 StatelessWidget 区别
+2- flutter 生命周期
+
+5- implements with mixin extends
+   参考 https://juejin.im/post/6844903764441202702
+        https://www.jianshu.com/p/f7ad4cc6d887
+
+3- flutter key （diff 更新机制）
+   参考 https://blog.jiyang.site/posts/2019-06-01-%E7%90%86%E8%A7%A3-flutter-%E4%B8%AD%E7%9A%84-key/
+
+4- Widgets、RenderObjects、Elements 绘制原理
+6- isolate
+7- setState 与 provider 区别 原理
