@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/export/export_config.dart';
-import 'package:frame_master/page/home/provider/home_provider.dart';
-import 'package:frame_master/util/screen_util.dart';
+import 'package:frame_master/export/export_util.dart';
+
+import 'provider/home_provider.dart';
 
 /// @time 2020/8/28 12:06 PM
 /// @author gyy
