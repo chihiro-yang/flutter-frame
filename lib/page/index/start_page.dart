@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/config/base/base_ful_widget.dart';
-import 'package:frame_master/config/base/base_widget.dart';
-import 'package:frame_master/config/util/get_it_util.dart';
-import 'package:frame_master/config/util/system_util.dart';
+import 'package:frame_master/export/export_config.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
 import 'package:frame_master/util/screen_util.dart';
 

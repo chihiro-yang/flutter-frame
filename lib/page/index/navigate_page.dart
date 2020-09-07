@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/config/base/base_ful_widget.dart';
+import 'package:frame_master/export/export_config.dart';
 import 'package:frame_master/util/toast_util.dart';
 
 /// @time 2020/8/28 12:06 PM

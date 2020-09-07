@@ -1,11 +1,10 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:frame_master/config/base/base_ful_widget.dart';
-import 'package:frame_master/config/cf/cf_gei_it.dart';
-import 'package:frame_master/config/cf/cf_key.dart';
-import 'package:frame_master/config/route/route_path.dart';
-import 'package:frame_master/config/util/get_it_util.dart';
+import 'package:frame_master/comn/config/config_key.dart';
+import 'package:frame_master/comn/get_it/gei_it.dart';
+import 'package:frame_master/comn/route/route_path.dart';
+import 'package:frame_master/export/export_config.dart';
 import 'package:frame_master/generated/l10n.dart';
 import 'package:frame_master/page/home/provider/home_provider.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
@@ -24,7 +23,7 @@ class MyApp extends BaseFulWidget {
 class _MyAppState extends BaseFulState<MyApp> {
   @override
   initStates() {
-    CfGetIt().registerGetIt();
+    GetIt().registerGetIt();
   }
 
   @override
@@ -39,7 +38,7 @@ class _MyAppState extends BaseFulState<MyApp> {
       );
 
   _initMaterial() => MaterialApp(
-        navigatorKey: CfKey.navigatorKey,
+        navigatorKey: ConfigKey.navigatorKey,
         initialRoute: "/",
         routes: RoutePath.appRoute,
         title: 'Flutter Frame',

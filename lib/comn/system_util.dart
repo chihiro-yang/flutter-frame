@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/config/cf/cf_key.dart';
+import 'package:frame_master/comn/config/config_key.dart';
 import 'package:frame_master/generated/l10n.dart';
+
 
 /// @time 2020/9/1 5:20 PM
 /// @author gyy
@@ -8,10 +9,10 @@ import 'package:frame_master/generated/l10n.dart';
 
 /// 获取本地字符串
 S getString() {
-  return S.of(getContext());
+  return S.of(getAplContext());
 }
 
 ///获取全局上下文
-BuildContext getContext() {
-  return CfKey.navigatorKey.currentContext;
+BuildContext getAplContext() {
+  return ConfigKey.navigatorKey.currentContext;
 }

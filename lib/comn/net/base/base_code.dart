@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:frame_master/config/net/base_response.dart';
+
+import 'base_response.dart';
 
 /// @time 2020/9/1 9:21 AM
 /// @author gyy

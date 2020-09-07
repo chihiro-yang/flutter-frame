@@ -2,7 +2,7 @@
 /// @author gyy
 /// @describe: 正则配置
 
-class CfRegexp {
+class ConfigRegexp {
   ///邮箱校验
   static final String regexEmail =
       '^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*\$';
