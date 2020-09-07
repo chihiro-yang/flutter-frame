@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:frame_master/serve/net/base_url.dart';
-import 'package:frame_master/serve/net/dio/dio_cookie.dart';
-import 'package:frame_master/serve/net/dio/dio_interceptors.dart';
+import 'package:frame_master/config/net/base_url.dart';
+import 'package:frame_master/config/net/dio/dio_cookie.dart';
+import 'package:frame_master/config/net/dio/dio_interceptors.dart';
 
 /// @time 2020/9/1 9:21 AM
 /// @author gyy

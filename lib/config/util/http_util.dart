@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:frame_master/serve/net/base_code.dart';
-import 'package:frame_master/serve/net/base_dio.dart';
-import 'package:frame_master/serve/net/dio/dio_error.dart';
-import 'package:frame_master/serve/net/dio/dio_process.dart';
+import 'package:frame_master/config/net/base_code.dart';
+import 'package:frame_master/config/net/base_dio.dart';
+import 'package:frame_master/config/net/dio/dio_error.dart';
+import 'package:frame_master/config/net/dio/dio_process.dart';
 
 /// @time 2020/9/1 9:21 AM
 /// @author gyy

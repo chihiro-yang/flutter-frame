@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/view/dialog/loading_dialog.dart';
+import 'package:frame_master/UI/dialog/loading_dialog.dart';
 
 /// @time 2020/9/1 6:08 PM
 /// @author gyy

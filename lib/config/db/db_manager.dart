@@ -1,4 +1,4 @@
-import 'package:frame_master/serve/db/db_helper.dart';
+import 'package:frame_master/config/db/db_helper.dart';
 import 'package:sqflite/sqflite.dart';
 
 /// @time 2020/9/1 9:21 AM

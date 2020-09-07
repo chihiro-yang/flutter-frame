@@ -1,4 +1,4 @@
-import 'package:frame_master/serve/db/db_manager.dart';
+import 'package:frame_master/config/db/db_manager.dart';
 import 'package:sqflite/sqlite_api.dart';
 
 /// @time 2020/9/1 5:20 PM

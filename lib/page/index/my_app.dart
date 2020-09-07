@@ -1,15 +1,15 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:frame_master/config/base/base_ful_widget.dart';
+import 'package:frame_master/config/cf/cf_gei_it.dart';
+import 'package:frame_master/config/cf/cf_key.dart';
+import 'package:frame_master/config/route/route_path.dart';
+import 'package:frame_master/config/util/get_it_util.dart';
 import 'package:frame_master/generated/l10n.dart';
 import 'package:frame_master/page/home/provider/home_provider.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
 import 'package:frame_master/page/index/start_page.dart';
-import 'package:frame_master/serve/base/base_ful_widget.dart';
-import 'package:frame_master/serve/config/system_config.dart';
-import 'package:frame_master/serve/config/gei_it_config.dart';
-import 'package:frame_master/serve/route/route_path.dart';
-import 'package:frame_master/util/get_it_util.dart';
 import 'package:provider/provider.dart';
 
 /// @time 2020/8/28 12:06 PM
@@ -22,10 +22,9 @@ class MyApp extends BaseFulWidget {
 }
 
 class _MyAppState extends BaseFulState<MyApp> {
-
   @override
   initStates() {
-    GetItConfig().registerGetIt();
+    CfGetIt().registerGetIt();
   }
 
   @override
@@ -40,7 +39,7 @@ class _MyAppState extends BaseFulState<MyApp> {
       );
 
   _initMaterial() => MaterialApp(
-        navigatorKey: SystemConfig.navigatorKey,
+        navigatorKey: CfKey.navigatorKey,
         initialRoute: "/",
         routes: RoutePath.appRoute,
         title: 'Flutter Frame',

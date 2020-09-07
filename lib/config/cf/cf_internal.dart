@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// @author gyy
 /// @describe: 国际化配置
 
-class InternalConfig {
+class CfInternal {
   static var zhLocale = Locale('zh', 'CN');
   static var enLocale = Locale('en', 'US');
 }
