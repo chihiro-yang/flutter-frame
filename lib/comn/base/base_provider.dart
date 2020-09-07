@@ -4,6 +4,6 @@ import 'package:flutter/material.dart';
 /// @author gyy
 /// @describe: 基础 provider 类
 
-abstract class BaseProvider extends ChangeNotifier {
+abstract class BaseProvider with ChangeNotifier {
   initRequest();
 }

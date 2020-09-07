@@ -4,13 +4,29 @@
 1- StatefulWidget 与 StatelessWidget 区别
 2- flutter 生命周期
 
-5- implements with mixin extends
-   参考 https://juejin.im/post/6844903764441202702
-        https://www.jianshu.com/p/f7ad4cc6d887
+5- implements with mixin extends ->
+   参考 https://juejin.im/post/6844903764441202702  https://www.jianshu.com/p/f7ad4cc6d887
 
-3- flutter key （diff 更新机制）
+3- flutter key（diff 更新机制）->
    参考 https://blog.jiyang.site/posts/2019-06-01-%E7%90%86%E8%A7%A3-flutter-%E4%B8%AD%E7%9A%84-key/
 
-4- Widgets、RenderObjects、Elements 绘制原理
+4- Widgets、RenderObjects、Elements 绘制原理 ->
+   参考 https://zhuanlan.zhihu.com/p/160189801
+
 6- isolate
+
 7- setState 与 provider 区别 原理
+
+ dart基础:
+ 1- const 、final 区别
+
+    共同点 -> 使用final与const修饰的变量 不能更改变量
+
+    不同点 -> const：编译时常量，其值在编译时就能确定。
+             final：运行时常量，其值在程序运行时才能确定。
+    什么是编译时常量 ->
+             其值在编译时就能确定。无需重复创建实例，在内存中只有一份。
+
+ 2- dart 单线程模型如何运行
+
+ 1- 数据结构 map list 等

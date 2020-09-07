@@ -4,11 +4,11 @@ import 'package:frame_master/util/screen_util.dart';
 /// @time 2020/9/1 9:21 AM
 /// @author gyy
 /// @describe: 加载view
-class LoadingUi extends StatelessWidget {
+class LoadingView extends StatelessWidget {
   final double bottomMargin;
   final double bottomPadding;
 
-  LoadingUi(this.bottomMargin, this.bottomPadding);
+  LoadingView(this.bottomMargin, this.bottomPadding);
 
   @override
   Widget build(BuildContext context) {

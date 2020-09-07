@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/export/export_config.dart';
+import 'package:frame_master/comn/export/export_config.dart';
+import 'package:frame_master/comn/export/export_index.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
 import 'package:frame_master/util/screen_util.dart';
 
@@ -19,7 +20,7 @@ class _StartState extends BaseFulState<StartPage> with WidgetsBindingObserver {
 
   @override
   initStates() {
-    _startProvider.initAdvert(context);
+  //  _startProvider.initAdvert(context);
   }
 
   @override
@@ -45,7 +46,9 @@ class _StartState extends BaseFulState<StartPage> with WidgetsBindingObserver {
 
   @override
   bindListener(Key key) {
-    if (ges1.key == key) {}
+    if (ges1.key == key) {
+      RouteUtil.pushPage(context, NavigatePage());
+    }
   }
 
   @override

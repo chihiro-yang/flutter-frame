@@ -1,12 +1,12 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:frame_master/comn/export/export_config.dart';
+import 'package:frame_master/comn/export/export_home.dart';
+import 'package:frame_master/comn/export/export_index.dart';
 import 'package:frame_master/generated/l10n.dart';
 import 'package:provider/provider.dart';
 
-import 'package:frame_master/export/export_config.dart';
-import 'package:frame_master/export/export_home.dart';
-import 'package:frame_master/export/export_index.dart';
 
 /// @time 2020/8/28 12:06 PM
 /// @author gyy

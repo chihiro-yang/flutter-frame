@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/view/ui/loading_ui.dart';
+import 'package:frame_master/view/loading_view.dart';
 
 /// @time 2020/9/1 9:21 AM
 /// @author gyy
@@ -15,9 +15,9 @@ class LoadingDialog {
         barrierDismissible: false,
         transitionDuration: Duration(milliseconds: 300),
         //barrierColor: Colors.black.withOpacity(0.5),
-        pageBuilder:
-            (BuildContext context, Animation animation, Animation secondaryAnimation) {
-          return LoadingUi(bottomMargin, bottomPadding);
+        pageBuilder: (BuildContext context, Animation animation,
+            Animation secondaryAnimation) {
+          return LoadingView(bottomMargin, bottomPadding);
         }).then((val) {});
   }
 
