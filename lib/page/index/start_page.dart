@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/comn/export/export_config.dart';
-import 'package:frame_master/comn/export/export_index.dart';
+import 'package:frame_master/export/export_config.dart';
+import 'package:frame_master/export/export_index.dart';
 import 'package:frame_master/page/index/provider/start_provider.dart';
 import 'package:frame_master/util/screen_util.dart';
 

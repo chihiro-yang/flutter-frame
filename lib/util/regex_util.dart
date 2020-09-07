@@ -1,4 +1,4 @@
-import 'package:frame_master/comn/config/config_regexp.dart';
+import 'package:frame_master/common/config/config_regexp.dart';
 
 /// @time 2020/8/28 3:43 PM
 /// @author gyy

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/comn/route/route_util.dart';
+import 'package:frame_master/export/export_config.dart';
 import 'package:frame_master/page/home/home_page.dart';
 import 'package:frame_master/util/screen_util.dart';
 
