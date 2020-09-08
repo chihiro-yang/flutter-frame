@@ -7,8 +7,11 @@ import 'package:frame_master/view/loading_view.dart';
 
 class LoadingDialog {
   ///显示加载动画
-  static void show(BuildContext context,
-      {double bottomMargin = 0.0, double bottomPadding = 0.0}) {
+  static void show(
+    BuildContext context, {
+    double bottomMargin = 0.0,
+    double bottomPadding = 0.0,
+  }) {
     showGeneralDialog(
         context: context,
         barrierLabel: " ",

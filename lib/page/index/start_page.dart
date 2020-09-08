@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/export/export_config.dart';
 import 'package:frame_master/export/export_index.dart';
-import 'package:frame_master/page/index/provider/start_provider.dart';
-import 'package:frame_master/util/screen_util.dart';
+import 'package:frame_master/export/export_util.dart';
 
 /// @time 2020/8/28 12:06 PM
 /// @author gyy
@@ -20,7 +19,7 @@ class _StartState extends BaseFulState<StartPage> with WidgetsBindingObserver {
 
   @override
   initStates() {
-  //  _startProvider.initAdvert(context);
+    _startProvider.initAdvert(context);
   }
 
   @override

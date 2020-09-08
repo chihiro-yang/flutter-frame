@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:frame_master/export/export_config.dart';
-import 'package:frame_master/export/export_util.dart';
 
-import 'provider/home_provider.dart';
+import 'package:frame_master/export/export_config.dart';
+import 'package:frame_master/export/export_home.dart';
+import 'package:frame_master/export/export_util.dart';
 
 /// @time 2020/8/28 12:06 PM
 /// @author gyy
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
     }
     index = index ~/ 2;
     return ListTile(
-      title: Text("123"),
+      title: Text(getString().appName4),
       leading: Text("456"),
       trailing: Text("789"),
     );

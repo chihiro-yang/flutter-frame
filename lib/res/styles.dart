@@ -8,15 +8,15 @@ import 'dimens.dart';
 /// @author gyy
 /// @describe: 样式
 
-class TextStyles {
-  static TextStyle listTitle = TextStyle(
+class Styles {
+  static final TextStyle listTitle = TextStyle(
       fontSize: setFontSize(Dimens.font_sp16),
       color: Colors.gray_f0,
       fontWeight: FontWeight.bold);
 
-  static TextStyle listContent =
+  static const TextStyle listContent =
       TextStyle(fontSize: Dimens.font_sp14, color: Colors.gray_f0);
 
-  static TextStyle listExtra =
+  static final TextStyle listExtra =
       TextStyle(fontSize: Dimens.font_sp12, color: Colors.green_62);
 }
