@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -26,5 +27,9 @@ class ImageWidget {
       placeholder: (context, url) => placeholder,
       errorWidget: (context, url, error) => errorWidget,
     );
+  }
+
+  Widget extendImage(String imageUrl) {
+    return ExtendedImage.network(imageUrl);
   }
 }

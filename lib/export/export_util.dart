@@ -34,3 +34,20 @@ export "package:frame_master/util/sp_util.dart";
 
 //toast
 export "package:frame_master/util/toast_util.dart";
+
+//发送事件
+export 'package:frame_master/util/event_bus_util.dart';
+
+//网络
+export 'package:frame_master/util/http_util.dart';
+
+//路由
+export 'package:frame_master/util/route_util.dart';
+
+//全局资源
+export 'package:frame_master/util/system_util.dart';
+
+//get_it
+export 'package:frame_master/util/get_it_util.dart';
+
+export 'package:frame_master/util/db_util.dart';

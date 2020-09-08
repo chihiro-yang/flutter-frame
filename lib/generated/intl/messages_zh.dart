@@ -21,7 +21,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
-    "appName4" : MessageLookupByLibrary.simpleMessage("flutter-框架2"),
+    "appName4" : MessageLookupByLibrary.simpleMessage("flutter-框架21"),
     "local2" : MessageLookupByLibrary.simpleMessage("asdad")
   };
 }

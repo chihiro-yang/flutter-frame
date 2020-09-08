@@ -33,10 +33,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `flutter-frame2`
+  /// `flutter-frame213`
   String get appName4 {
     return Intl.message(
-      'flutter-frame2',
+      'flutter-frame213',
       name: 'appName4',
       desc: '',
       args: [],

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:frame_master/export/export_config.dart';
 import 'package:frame_master/export/export_home.dart';
-import 'package:frame_master/export/export_index.dart';
+import 'package:frame_master/export/export_launch.dart';
+import 'package:frame_master/export/export_util.dart';
 import 'package:frame_master/export/export_view.dart';
 import 'package:frame_master/generated/l10n.dart';
 
@@ -14,12 +15,12 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 /// @author gyy
 /// @describe: MyApp
 
-class MyApp extends BaseFulWidget {
+class MyAppPage extends BaseFulWidget {
   @override
-  BaseFulState<StatefulWidget> getBaseFulState() => _MyAppState();
+  BaseFulState<StatefulWidget> getBaseFulState() => _MyAppStatePage();
 }
 
-class _MyAppState extends BaseFulState<MyApp> {
+class _MyAppStatePage extends BaseFulState<MyAppPage> {
   @override
   initStates() {
     GetIt().registerGetIt();
@@ -37,7 +38,7 @@ class _MyAppState extends BaseFulState<MyApp> {
       );
 
   _initMaterial() => MaterialApp(
-        navigatorKey: ConfigKey.navigatorKey,
+        navigatorKey: Keys.navigatorKey,
         initialRoute: "/",
         routes: RoutePath.appRoute,
         title: 'Flutter Frame',

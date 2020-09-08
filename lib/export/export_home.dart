@@ -3,5 +3,5 @@
 /// @describe: home模块
 
 export 'package:frame_master/page/home/home_page.dart';
-export 'package:frame_master/page/home/provider/home_provider.dart';
+export 'package:frame_master/page/home/home_provider.dart';
 

@@ -16,7 +16,7 @@ flutter基础 ->
 
 6- isolate 隔离机制
 
-7- setState 与 provider 区别与原理
+7- setState 与 provider 状态更新区别与原理
 
 dart基础 ->
 

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 /// @time 2020/9/1 5:05 PM
 /// @author gyy
-/// @describe: 全局Context
+/// @describe: 全局Key
 
-class ConfigKey {
+class Keys {
   static GlobalKey<NavigatorState> navigatorKey = new GlobalKey();
 }

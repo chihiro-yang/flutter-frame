@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frame_master/export/export_config.dart';
-import 'package:frame_master/export/export_index.dart';
+import 'package:frame_master/export/export_launch.dart';
 import 'package:frame_master/export/export_util.dart';
 import 'package:frame_master/export/export_view.dart';
 
@@ -20,7 +20,7 @@ class _StartState extends BaseFulState<StartPage> with WidgetsBindingObserver {
 
   @override
   initStates() {
-    _startProvider.initAdvert(context);
+    //   _startProvider.initAdvert(context);
   }
 
   @override

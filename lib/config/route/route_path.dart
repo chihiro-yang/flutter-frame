@@ -1,4 +1,5 @@
-import 'package:frame_master/page/index/navigate_page.dart';
+
+import 'package:frame_master/export/export_launch.dart';
 
 /// @time 2020/9/1 9:21 AM
 /// @author gyy
