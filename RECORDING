@@ -1,7 +1,6 @@
 国际化 参考 - https://www.jianshu.com/p/bee6db203e21
 路由   参考 - https://juejin.im/post/5c3ed794f265da616b10f14e
 
-
 flutter基础 ->
 
 1- StatefulWidget 与 StatelessWidget 区别
@@ -10,13 +9,11 @@ flutter基础 ->
 
 3- implements with mixin extends 区别 (https://www.jianshu.com/p/f7ad4cc6d887)
 
-4- Widgets、RenderObjects、Elements 绘制原理 (https://zhuanlan.zhihu.com/p/160189801)
+4- Widgets、RenderObjects、Elements、 Layer 绘制原理 (https://zhuanlan.zhihu.com/p/160189801)
 
-5- flutter key（diff 更新机制）(https://blog.jiyang.site/posts/2019-06-01-%E7%90%86%E8%A7%A3-flutter-%E4%B8%AD%E7%9A%84-key/)
+5- flutter key 更新机制 (https://www.jianshu.com/p/a09452b93264)
 
-6- isolate 隔离机制
-
-7- setState 与 provider 状态更新区别与原理
+6- setState 与 provider(InheritedWidget) 状态更新区别与原理（https://developer.aliyun.com/article/604050）
 
 dart基础 ->
 
@@ -30,6 +27,8 @@ dart基础 ->
              其值在编译时就能确定。无需重复创建实例，在内存中只有一份。
 
  2- dart 单线程模型如何运行
+
+ 3- isolate 隔离机制
 
 
  数据结构 ->
