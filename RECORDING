@@ -9,11 +9,17 @@ flutter基础 ->
 
 3- implements with mixin extends 区别 (https://www.jianshu.com/p/f7ad4cc6d887)
 
-4- Widgets、RenderObjects、Elements、 Layer 绘制原理 (https://zhuanlan.zhihu.com/p/160189801)
+4- Widget、Elements、RenderObjects、 Layer 绘制原理 (https://zhuanlan.zhihu.com/p/160189801)
 
-5- flutter key 更新机制 (https://www.jianshu.com/p/a09452b93264)
+5- flutter key/更新机制 (https://www.jianshu.com/p/a09452b93264)
 
 6- setState 与 provider(InheritedWidget) 状态更新区别与原理（https://developer.aliyun.com/article/604050）
+
+7- listView 绘制原理
+
+8- flutter 热重载机制
+
+9-
 
 dart基础 ->
 
@@ -30,6 +36,14 @@ dart基础 ->
 
  3- isolate 隔离机制
 
+ 4- dart 值传递 (https://www.zhihu.com/question/31203609)
+
+ 5- Future Stream 异步机制
 
  数据结构 ->
- 1- map list 实现原理
+
+ 1- map 实现原理
+
+ 2-list 实现原理
+
+ 3- Set 实现原理
