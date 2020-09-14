@@ -15,11 +15,11 @@ flutter基础 ->
 
 6- setState 与 provider(InheritedWidget) 状态更新区别与原理（https://developer.aliyun.com/article/604050）
 
-7- listView 绘制原理
+7- listView 绘制原理 (https://www.jianshu.com/p/8923888925b0)
 
 8- flutter 热重载机制
 
-9-
+99- 一个不错的地址 (https://iter01.com/443044.html)
 
 dart基础 ->
 
@@ -36,9 +36,10 @@ dart基础 ->
 
  3- isolate 隔离机制
 
- 4- dart 值传递 (https://www.zhihu.com/question/31203609)
+ 4- dart 值传递/引用传递 (https://www.zhihu.com/question/31203609)
 
  5- Future Stream 异步机制
+
 
  数据结构 ->
 
@@ -47,3 +48,7 @@ dart基础 ->
  2-list 实现原理
 
  3- Set 实现原理
+
+ Android 面试题
+
+ 1- https://juejin.im/post/6844903891625050119#heading-107
