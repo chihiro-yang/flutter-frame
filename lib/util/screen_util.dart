@@ -9,20 +9,20 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 initScreen(BuildContext buildContext,
     {double designWidth = 1080, double designHeight = 1920}) {
   ScreenUtil.init(buildContext,
-      width: designWidth, height: designHeight, allowFontScaling: false);
+      designSize: Size(designWidth, designHeight), allowFontScaling: false);
 }
 
 //屏幕宽度
-getScreenWidth() => 1.wp;
+getScreenWidth() => 1.sw;
 
 //屏幕高度
-getScreenHeight() => 1.hp;
+getScreenHeight() => 1.sh;
 
 //状态栏高度
-getStateBarHeight() => ScreenUtil.statusBarHeight;
+getStateBarHeight() => ScreenUtil().statusBarHeight;
 
 //安全区域高度
-getBottomBarHeight() => ScreenUtil.bottomBarHeight;
+getBottomBarHeight() => ScreenUtil().bottomBarHeight;
 
 //设置屏幕宽度
 setWidth(double width) => width.w;

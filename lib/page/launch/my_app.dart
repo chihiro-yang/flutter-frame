@@ -46,7 +46,7 @@ class _MyAppStatePage extends BaseFulState<MyAppPage> {
         //初始化Toast
         builder: BotToastInit(),
         navigatorObservers: [BotToastNavigatorObserver()],
-        home: StartPage(),
+        home: HomePage(),
         debugShowCheckedModeBanner: false,
         //国际化
         localizationsDelegates: const [

@@ -4,16 +4,13 @@ import 'package:flutter/material.dart';
 /// @author gyy
 /// @describe: 动态路由
 
-
 class RouteUtil {
   ///动态路由 - 跳转
   static void pushPage(BuildContext context, Widget cls, {Function popResult}) {
     Navigator.of(context).push(new MaterialPageRoute(builder: (_) {
       return cls;
-    })).then((dynamic value) => () {
-          if (value != null || popResult != null) {
-            popResult(value);
-          }
+    })).then((dynamic value) => {
+          if (value != null || popResult != null) {popResult(value)}
         });
   }
 
